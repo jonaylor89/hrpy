@@ -3,6 +3,15 @@
 import os
 import sys
 
+def usage():
+    print("hr [STRING]...") 
+    print()
+    print("Description:")
+    print(" Prints the string arguments across the terminal window")
+    print()
+    print("Example: ")
+    print(" hr #")
+
 def hr(char, cols):
     line = ''
     
@@ -14,6 +23,7 @@ def hr(char, cols):
     print(line[:cols]) 
 
 def main():
+
     # Get the size of the terminal
     rows, columns = os.popen('stty size', 'r').read().split()
 
@@ -21,6 +31,7 @@ def main():
     if len(sys.argv) > 1:
         chars = sys.argv[1:]
     else:
+        usage()
         chars = ['#']
 
 
