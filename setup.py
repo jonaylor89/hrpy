@@ -1,17 +1,16 @@
 
 from distutils.core import setup
-from setuptools import find_packages
 
 setup(
   name = 'hrpy',         # How you named your package folder (MyLib)
-  packages = find_packages(exclude=["hrpy"]),   # Chose the same as "name"
+  packages = ['hrpy'],   # Chose the same as "name"
   version = '0.0.4',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'hr but written in python',   # Give a short description about your library
   author = 'John Naylor',                   # Type in your name
   author_email = 'jonaylor89@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/jonaylor89/hrpy',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/jonaylor89/hrpy/archive/v_0.2.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/jonaylor89/hrpy/archive/v_0.5.tar.gz',    # I explain this later on
   keywords = ['hr', 'terminal', 'formatting'],   # Keywords that define your package best
   install_requires=[],
   entry_points={"console_scripts": ["hr=hrpy:main"]},
