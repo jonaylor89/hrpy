@@ -3,7 +3,7 @@
 import os
 import sys
 
-def usage():
+def usage() -> None:
     print("hr [STRING]...") 
     print()
     print("Description:")
@@ -12,7 +12,7 @@ def usage():
     print("Example: ")
     print(" hr #")
 
-def hr(char, cols):
+def hr(char: str, cols: int) -> None:
     line = ''
     
     # Append char to line until it's greater than char
@@ -22,7 +22,7 @@ def hr(char, cols):
     # Clip some off in case cols isn't a multiple of length of char
     print(line[:cols]) 
 
-def main():
+def main() -> None:
 
     # Get the size of the terminal
     rows, columns = os.popen('stty size', 'r').read().split()
