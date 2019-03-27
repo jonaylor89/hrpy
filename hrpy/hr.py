@@ -12,7 +12,7 @@ def usage() -> None:
     print("Example: ")
     print(" hr #")
 
-def hr(char: str, cols: int) -> None:
+def hr(char: str, cols: int = 50) -> None:
     line = ''
     
     # Append char to line until it's greater than char
