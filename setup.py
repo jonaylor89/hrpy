@@ -1,17 +1,14 @@
 from os import path
 from distutils.core import setup
 
-# The text of the README file
-with open("README.md", encoding='utf-8') as f:
-    LONG = f.read()
-
 setup(
     name="hrpy",
     packages=["hrpy"],
     version="0.1.0",
     license="MIT",
     description="hr but written in python",
-    long_description=LONG,
+    long_description=open("README.rst").read(),
+    long_description_content_type="text/x-rst",
     author="John Naylor",
     author_email="jonaylor89@gmail.com",
     url="https://github.com/jonaylor89/hrpy",
