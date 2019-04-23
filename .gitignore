@@ -3,5 +3,7 @@ __pycache__/
 dist/
 build/
 hrpy.egg-info/
+.mypy_cache/
+
 
 
