@@ -32,9 +32,13 @@ def main() -> None:
 
     # If there are command line arguments, use those, else just use '#'
     if len(sys.argv) > 1:
+
+        if sys.argv[0] in ["--help", "-h"]:
+            usage()
+            return
+
         chars = sys.argv[1:]
     else:
-        usage()
         chars = ["#"]
 
     # Loop though and print a seperate line for each
